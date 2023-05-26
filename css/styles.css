@@ -23,13 +23,11 @@ h1{
 h2{
     color: #fff;
     font-size: 25px;
-    padding-top: 230px;
+    padding-top: 280px;
 }
 
-h3{
-    color: #fff;
-    font-size: 25px;
-    padding-top: 450px;
+#main_pic{
+    margin-bottom: 220px;
 }
 
 p{
