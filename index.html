@@ -13,11 +13,11 @@
     <header>
       <nav>
         <ul>
-          <li><a href="#top">Top</a></li>
-          <li><a href="#resume">Resume</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#education">Education</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#top" class="scroll-link">Top</a></li>
+          <li><a href="#resume" class="scroll-link">Resume</a></li>
+          <li><a href="#experience" class="scroll-link">Experience</a></li>
+          <li><a href="#education" class="scroll-link">Education</a></li>
+          <li><a href="#contact" class="scroll-link">Contact</a></li>
         </ul>
       </nav>
     </header>      
@@ -25,7 +25,7 @@
       <!-- Top Section -->
       <h1 id="top">Mark Kiefer</h1>
       <p class="caption">Computer Science Student</p>
-      <img class="pic" id="main_pic" src="images\IMG_0245.JPG">
+      <img class="pic" id="main_pic" src="images\myself.JPG">
 
       <!-- Resume Section -->
       <h2 id="resume"><a href="images\Mark Kiefer's Resume.pdf" target="_blank">Copy of My Resume</a></h2>
@@ -34,7 +34,7 @@
 
         <div class="image-container">
           <img class="pic expandable" src="images\resume_icon.png">
-          <p>For more information about me, please scroll down and if you have any questions, do not hesitate to contact me</p>
+          <p>For more information about me, please visit the contact section and if you have any questions, do not hesitate to contact me</p>
         </div>
 
       </div>
@@ -54,7 +54,6 @@
           <img class="pic expandable" src="images\java.jpg">
           <p class="caption">Java</p>
           <p>Skilled in designing and implementing object-oriented programs utilizing Java</p>
-          <p><a href="images\Mark Kiefer - Java Projects.pdf" target="_blank">Projects in Java</a></p>
         </div>
 
         <div class="image-container">
@@ -67,14 +66,36 @@
           <img class="pic expandable" src="images\html.jpg">
           <p class="caption">HTML/CSS/JS</p>
           <p>Experience in web development utilizing HTML, CSS, and JavaScript obtained through completion of a Web Development Bootcamp course.</p>
-          <p><a href="images\Mark Kiefer - HTML-CSS-JS Projects.pdf" target="_blank">Projects in HTML/CSS/JS</a></p>
         </div>
+
+      </div>
+
+      <div class="parent-container">
 
         <div class="image-container">
           <img class="pic expandable" src="images\office.jpg">
           <p class="caption">Microsoft Office</p>
           <p>Expertise in utilizing Microsoft applications, encompassing Word, Excel, PowerPoint, Outlook, and Access</p>
         </div>
+
+        <div class="image-container">
+          <img class="pic expandable" src="images\sql.jpg">
+          <p class="caption">SQL</p>
+          <p>Experience with querying in SQL to manage databases</p>
+        </div>
+
+        <div class="image-container">
+          <img class="pic expandable" src="images\affinity_photo.png">
+          <p class="caption">Affinity Photos</p>
+          <p>Skilled in photo editing using Affinity Photo with a good understanding of editing techniques</p>
+        </div>
+
+        <div class="image-container">
+          <img class="pic expandable" src="images\react.png">
+          <p class="caption">React</p>
+          <p>Proficient in React development with expertise in building dynamic and responsive web applications</p>
+        </div>
+
       </div>
 
       <!-- Education Section -->
@@ -95,6 +116,7 @@
           <p>Completed a web development course through Udemy</p>
           <p><a href="images\Web Development Bootcamp Certificate - Mark Kiefer.jpg" target="_blank">Certificate</a></p>
         </div>
+
       </div>
 
       <!-- Contact Section -->
@@ -112,9 +134,12 @@
           <p class="caption">mkiefer@uwo.ca</p>
         </div>
       </div>
+      
     </div>
 
     <!-- Footer-->
-    <p class="small">Copyright © 2023 Mark Kiefer. <a href="#top">Back to Top.</a></p>
+    <p class="small">Copyright © <span id="current_year"></span> Mark Kiefer. <a href="#top" class="scroll-link">Back to Top.</a></p>
+
+    <script src="script.js"></script>
   </body>
 </html>
