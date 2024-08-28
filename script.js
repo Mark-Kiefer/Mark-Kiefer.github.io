@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 var targetOffset = targetElement.offsetTop;
                 var headerOffset = 0; // Adjust this value if you have a fixed header
 
-                if (targetId == "#experience"){
+                if (targetId == "#skill"){
                     targetOffset = targetOffset + 175;
 
                 }
