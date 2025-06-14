@@ -1,113 +1,157 @@
 header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: #3d3d3d;
-    padding: 0px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 0px;
+  z-index: 1000;
 }
 
-body{
-    text-align: center;
-    font-weight: bold;
-    font-family: sans-serif;
-    background-color: #3d3d3d;
+body {
+  text-align: center;
+  font-weight: bold;
+  font-family: sans-serif;
+  margin: 0px;
+  background-color: #060d1c;
+  background-image: url("../images/mooning.png");
 }
 
-h1{
-    color: #fff;
-    font-size: 50px;
-    padding-top: 220px;
+/** for the parallax main image */
+.outer-main-img {
+  width: 100%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../images/backdrop code.jpg");
+  background-attachment: fixed;
+  height: 100vh;
+  padding: 0;
+  position: relative;
 }
 
-h2{
-    color: #fff;
-    font-size: 25px;
-    padding-top: 280px;
+.inner-main-img {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: clamp(25px, 6vw, 50px);
+  color: #f4a261;
+  height: 100%;
 }
 
-#main_pic{
-    margin-bottom: 220px;
+.shadow {
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 1);
 }
 
-p{
-    color: #fff;
-    font-size: 15px;
+h1 {
+  color: #fff;
+  font-size: 50px;
+  padding-top: 220px;
 }
 
-a{
-    color: #fff;
+h2 {
+  color: #fff;
+  font-size: 25px;
+  padding-top: 280px;
+}
+
+#main_pic {
+  width: 250px;
+  height: 250px;
+  margin-bottom: 220px;
+}
+
+p {
+  color: #fff;
+  font-size: 15px;
+}
+
+a {
+  color: #fff;
 }
 
 .pic {
-    display: block;
-    margin: 0 auto;
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
+  display: block;
+  margin: 0 auto;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
 .image-container {
-    display: inline-flex;
-    flex-direction: column;
-    align-items: center;
-    width: 200px;
-    text-align: center;
-    margin: 25px; 
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  width: 200px;
+  text-align: center;
+  margin: 25px;
 }
 
 .expandable:hover {
-    height: 175px;
-    width: 175px;
-    -webkit-box-shadow: 0em 2em 3em -1.5em rgba(255, 255, 255, 1);  
-    -moz-box-shadow:    0em 2em 3em -1.5em rgba(255, 255, 255, 1); 
-    box-shadow:         0em 2em 3em -1.5em rgba(255, 255, 255, 1); 
-    transition: all 0.3s;
+  height: 175px;
+  width: 175px;
+  -webkit-box-shadow: 0em 2em 3em -1.5em rgba(255, 255, 255, 1);
+  -moz-box-shadow: 0em 2em 3em -1.5em rgba(255, 255, 255, 1);
+  box-shadow: 0em 2em 3em -1.5em rgba(255, 255, 255, 1);
+  transition: all 0.3s;
 }
 
 .expandable:not(:hover) {
-    height: 150px;
-    width: 150px;
-    box-shadow: none;
-    transition: all 0.3s;
-}
-  
-.caption {
-    font-size: 20px;
+  height: 150px;
+  width: 150px;
+  box-shadow: none;
+  transition: all 0.3s;
 }
 
-.small{
-    font-size: 10px;
+.caption {
+  font-size: 20px;
+}
+
+.small {
+  font-size: 10px;
 }
 
 nav {
-    background-color: #333;
-    height: 50px;
-    display: flex;
-    justify-content: space-between;
+  background-color: #2d2d2d;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
 }
-  
+
 nav ul {
-    list-style-type: none;
-    padding-left: 10px;
-    display: flex;
-    align-items: center;
+  list-style-type: none;
+  padding-left: 10px;
+  display: flex;
+  align-items: center;
 }
-  
+
 nav li {
-    margin-right: 20px;
+  margin-right: 20px;
 }
-  
+
 nav a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 16px;
-    font-weight: bold;
-    padding: 10px;
-    transition: background-color 0.3s ease;
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px;
+  transition: background-color 0.3s ease;
 }
-  
+
 nav a:hover {
-    background-color: #555;
+  background-color: #555;
+}
+
+.course-list {
+  padding: 0;
+  margin: 0;
+}
+
+.course-list li {
+  color: white;
+  margin-bottom: 12px;
+  font-size: 15px;
+  position: relative;
 }
