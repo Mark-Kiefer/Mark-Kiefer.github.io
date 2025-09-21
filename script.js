@@ -52,4 +52,15 @@ function scrollFunction() {
   outer.style.backgroundPositionY = newTop + "px";
 }
 
+// hamburger menu toggle
+const hamburger = document.getElementById("hamburger");
+const hamburgerNavLinks = document.getElementById("hamburger-nav-links");
+
+/*
+  Event listeners
+*/
+hamburger.addEventListener("click", () => {
+  hamburgerNavLinks.classList.toggle("show");
+});
+
 window.addEventListener("scroll", scrollFunction);
